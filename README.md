@@ -18,6 +18,9 @@ Users can also selected a specific month to view their history monthly activitie
 
 <img width="1439" alt="Screen Shot 2022-05-21 at 11 26 03 PM" src="https://user-images.githubusercontent.com/82247271/169677012-3c10481c-de36-4524-a39e-f47d4e2682f0.png">
 
+## API
+I decided to build up my own API for this application. I have created the API with Node JS and deployed on Heroku and set up the connection with the API to the Personal-Ledger application. API is deployed at: https://personalledger.herokuapp.com/
+
 ## Technology Used:
 * JavaScript 
 * Node JS
