@@ -115,15 +115,12 @@ function MonthlyExpenses(){
                             </Container>
                             </Box>
                             <PieChart username={CurrentUser} year={year} month={month} chartTitle={'Monthly Category Expenses'}/>
-                        {/* <PieChart username={CurrentUser} year={year} month={month} chartTitle={title}/>
-                        <LineChart username={CurrentUser} year={year} month={month} chartTitle={title}/>
-                        <Balance totalIncome={totalIncome} totalExpense={TotalExpense}/> */}
+                        
                         <ExpenseCardList expenses={expenses.expenses}/>
                         </div>
                     :<p className="lead">Sorry, no results were found!</p>
                 }
-                {/* <button onClick={addExpense}>Add New Expense</button>
-                <button onClick={searchMonthly}>Search By Month</button> */}
+               
             </div>
             
         </div>

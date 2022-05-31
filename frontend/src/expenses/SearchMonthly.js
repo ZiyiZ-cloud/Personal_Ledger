@@ -78,21 +78,7 @@ function SearchMonthly(){
 
     return (
         <div>
-            {/* <div>
-                <form onSubmit={selectedMonth}>
-                <div className="form-group">
-                  <label>Date</label>
-                  <input
-                    type="date"
-                      name="date"
-                      className="form-control"
-                      value={formData.date}
-                      onChange={handleChange}
-                  />
-                </div>
-                <button onClick={selectedMonth}>Search Monthly Expenses</button>
-                </form>
-            </div> */}
+           
             <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
@@ -107,13 +93,7 @@ function SearchMonthly(){
                     />
                     </Grid>
                     <Grid item xs={11} md={5}>
-                    {/* <YearPicker
-                        date={date}
-                        minDate={minDate}
-                        maxDate={maxDate}
-                        isDateDisabled={() => false}
-                        onChange={(newDate) => setDate(newDate)}
-                    /> */}
+                    
                     </Grid>
                     <Box textAlign='center'>
                     <Button variant='contained' style={{justifyContent: 'center'}} onClick={selectedMonth}>
@@ -122,24 +102,7 @@ function SearchMonthly(){
                     </Box>
                 </Grid>
                 </LocalizationProvider>
-                {/* <button onClick={selectedMonth}>Search Monthly Expenses</button> */}
-                {/* <Grid container justify="center">
-                    <Button color="primary" size="large" type="submit" variant="contained">
-                    Sign Up
-                    </Button>
-                </Grid>
-                <Button
-                    justify='center'
-                    color="secondary"
-                    variant="contained"
-                    size="large"
-                    component="a"
-                    onClick={selectedMonth}
-                    sx={{ minWidth: 200 }}
-                >
-                    Search Monthly Expense
-                </Button>
-             */}
+                
         </div>
     )
 

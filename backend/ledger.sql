@@ -6,4 +6,3 @@ CREATE DATABASE expense_tracker;
 \connect expense_tracker
 
 \i ledger-schema.sql
-\i ledger-seed.sql

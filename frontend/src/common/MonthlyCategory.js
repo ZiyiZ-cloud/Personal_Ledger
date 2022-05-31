@@ -11,12 +11,10 @@ function LineChart({username,year,month,chartTitle}) {
 
   const [income,setIncome] = useState(null);
   const [expense,setExpense] = useState(null);
-  // const [ totalIncome,setTotalIncome] = useState(null);
 
   async function getdailyData(username,year,month){
     setIncome(await LedgerApi.getIncomesByDay(username,year,month));
     setExpense( await LedgerApi.getExpensesByDay(username,year,month));
-    // setTotalIncome ( await LedgerApi.getMonthlyTotalIncome(username,year,month))
   }
 
     useEffect(function getDailyData(){
@@ -26,7 +24,6 @@ function LineChart({username,year,month,chartTitle}) {
 
     if(!income) return <LoadingSpinner />;
     if(!expense) return <LoadingSpinner />;
-    // if(!totalIncome) return <LoadingSpinner />;
 
     let data = {
       labels: expense.dailyExpense.map(x=>x[0]),

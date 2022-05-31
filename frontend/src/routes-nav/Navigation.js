@@ -81,23 +81,7 @@ function Navigation({ logout }) {
                     </Button>
                   </Tooltip>
                 </Box>
-                {/* <ul className="navbar-nav ml-auto">
-            <li className="nav-item mr-4">
-              <NavLink className="nav-link" to="/expenses">
-                Expenses
-              </NavLink>
-            </li>
-            <li className="nav-item mr-4">
-              <NavLink className="nav-link" to="/profile">
-                Profile
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={logout}>
-                Log out {currentUser.user.first_name || currentUser.user.username}
-              </Link>
-            </li>
-          </ul> */}
+    
               </Toolbar>
             </Container>
           </AppBar>
@@ -143,30 +127,11 @@ function Navigation({ logout }) {
                     </Button>
                 </Box>
 
-                {/* <Box float='right'>
-                    <Button
-                      key="logout"
-                      sx={{ my: 2, color: 'white', display: 'block' }}
-                      href="/login"
-                    >
-                      Login
-                    </Button>
-                </Box> */}
+
                 </Toolbar>
 
               </Container>          
-              {/* <ul className="navbar-nav ml-auto">
-                <li className="nav-item mr-4">
-                  <NavLink className="nav-link" to="/login">
-                    Login
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-4">
-                  <NavLink className="nav-link" to="/register">
-                    Sign Up
-                  </NavLink>
-                </li>
-              </ul> */}
+
             </AppBar>
   
 
@@ -176,9 +141,7 @@ function Navigation({ logout }) {
     return (
       <div>
         <nav className="Navigation navbar navbar-expand-md">
-          {/* <Link className="navbar-brand" to="/">
-            Ledger
-          </Link> */}
+
           {currentUser ? loggedInNav() : loggedOutNav()}
         </nav>
           </div>

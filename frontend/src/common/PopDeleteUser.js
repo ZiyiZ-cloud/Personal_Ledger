@@ -29,7 +29,6 @@ function PopupUser({ popup,setPopup }) {
       <div className="modal">
         <div className="modal_box">
           <p>You sure you wanna delete?</p>
-          {/* <button onClick={backToProfile}>Cancel</button> */}
           <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
               <Button fullWidth
@@ -42,9 +41,7 @@ function PopupUser({ popup,setPopup }) {
               sx={{ mt: 3, mb: 2, backgroundColor:'red'}} onClick={deleteUser}>Confirm</Button>
             </Grid>
             </Grid>
-          {/* <button onClick={deleteUser}>
-            Confirm
-          </button> */}
+
         </div>
       </div>
     );

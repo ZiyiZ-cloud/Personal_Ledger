@@ -56,15 +56,13 @@ function TotalExpenses(){
     return (
         <div>
             <div>
-                {/* <button onClick={addExpense}>Add New Expense</button>
-                <button onClick={currentMonth}>Current Month Expenses</button> */}
+                
                 {expenses.expenses.length
                     ?<div><ExpenseCardList expenses={expenses.expenses}/>
                         </div>
                     :<p className="lead">Sorry, no results were found!</p>
                 }
                
-                {/* <button onClick={currentYear}>Current Annual Expenses</button> */}
             </div>
             
         </div>

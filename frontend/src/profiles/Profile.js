@@ -39,21 +39,7 @@ function Profile(){
 
     return (
         <div>
-            {/* <div>
-            Username:{currentUser.user.username}
-            </div>
-            <div>
-            First Name:{currentUser.user.first_name}
-            </div>
-            <div>
-            Last Name:{currentUser.user.last_name}
-            </div>
-            <div>
-            Email:{currentUser.user.email}
-            </div>
-            <button onClick={handleSubmit}>Edit</button>
-            <button onClick={deleteUser}>Delete User</button>
-            {popup.show && <PopupUser popup={popup} setPopup={setPopup} />} */}
+            
             <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box

@@ -24,16 +24,7 @@ function ExpenseCardList({expenses}){
 
     return (
         <div>
-            {/* {expenses.map(expense =>(
-                <div>
-                <ExpenseCard 
-                    key ={expense.id}
-                    id={expense.id}
-                    amount={expense.amount}
-                    category={expense.category}
-                    detail={expense.detail}
-                    date={expense.date}
-                /> */}
+
 
                 <Card >
                     <CardHeader title="Expense History" />
@@ -97,8 +88,7 @@ function ExpenseCardList({expenses}){
                         </Table>
                     </Box>
                 </Card>
-                {/* </div>
-            ))} */}
+
 
         </div>
     )

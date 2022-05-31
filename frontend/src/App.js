@@ -109,15 +109,12 @@ function App() {
       <BrowserRouter>
         <UserContext.Provider
             value={{ currentUser, setCurrentUser }}>
-            {/* <Paths login={login} signup={signup} /> */}
             <Navigation logout={logout} />
-            {/* <NavBar /> */}
             <Routes login={login} signup={signup}>
                 <Route exact path='/' element={<Homepage/>}></Route>
                 <Route exact path='/login' element={<LoginForm login={login} />}></Route>
                 <Route exact path='/register' element={<SignupForm singup={signup} />}></Route>
                 <Route exact path='/expenses' element={<TotalExpenses />}></Route>
-                <Route path = 'expenses/year/:year' element={<AnnualExpenses />}></Route>
                 <Route path = 'expenses/currentmonth' element={<CurrentMonthExpenses />}></Route>
                 <Route path = 'expenses/searchmonthly' element={<SearchMonthly />}></Route>
                 <Route path = 'expenses/year/:year/month/:month' element={<MonthlyExpenses />}></Route>

@@ -122,9 +122,7 @@ function CurrentMonthExpenses(){
                     
                     :<p className="lead">Sorry, no results were found!</p>
                 }
-                
-                {/* <button onClick={addExpense}>Add New Expense</button> */}
-                {/* <button onClick={searchMonthly}>Search By Month</button> */}
+
             </div>
             
         </div>

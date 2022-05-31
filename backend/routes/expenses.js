@@ -1,11 +1,9 @@
 
-const jsonschema = require('jsonschema');
 
 const express = require('express');
-const { ensureLoggedIn, ensureCorrectUser } = require("../middleware/auth");
+const {  ensureCorrectUser } = require("../middleware/auth");
 const { BadRequestError } = require("../expressError");
 const Expenses = require("../models/expense");
-const { createToken } = require("../helpers/tokens");
 
 const router = express.Router();
 
@@ -13,9 +11,7 @@ const router = express.Router();
 
 router.post('/:username', ensureCorrectUser, async function(req,res,next){
     try{
-        // use jsonschema to validate input 
 
-        //once successfully validate, add new expense to current user
         const expense = await Expenses.createExpense(req.params.username,req.body)
         return res.status(201).json({expense})
         }catch(err){
@@ -128,9 +124,7 @@ router.get('/:username/year/:year/month/:month/total/expense',ensureCorrectUser,
 // get single expense
 router.get('/:username/:id',ensureCorrectUser,async function(req,res,next){
     try{
-        // use jsonschema to validate new data
 
-        // once validate update data fit requirement, update and return new user information
         const expense = await Expenses.getSelectedExpense(req.params.username,req.params.id);
         return res.json({expense});
     }catch(err){
@@ -141,9 +135,7 @@ router.get('/:username/:id',ensureCorrectUser,async function(req,res,next){
 // update expense
 router.patch('/:username/:id',ensureCorrectUser,async function(req,res,next){
     try{
-        // use jsonschema to validate new data
 
-        // once validate update data fit requirement, update and return new user information
         const expense = await Expenses.updateExpense(req.params.id,req.body);
         return res.json({expense});
     }catch(err){
