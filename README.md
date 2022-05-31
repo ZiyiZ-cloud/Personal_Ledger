@@ -21,6 +21,8 @@ Users can also selected a specific month to view their history monthly activitie
 ## API
 I decided to build up my own API for this application. I have created the API with Node JS and deployed on Heroku and set up the connection with the API to the Personal-Ledger application. API is deployed at: https://personalledger.herokuapp.com/
 
+API provides support for frontend. With the correct user token, api provides access to get and edit user information and expenses. For expenses, user can access all history or history for selected month. API also provides data for building up the chart in frontend about monthly category, daily total income and expense, and monthly total balance. 
+
 ## Technology Used:
 * JavaScript 
 * Node JS
