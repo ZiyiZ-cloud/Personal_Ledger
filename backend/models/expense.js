@@ -7,7 +7,7 @@ class Expenses{
     
     // create new expense
     static async createExpense(username,data) {
-        if(data.category==="") return (`Category Not Found`);
+        // if(data.category==="") return (`Category Not Found`);
         const result = await db.query(
               `INSERT INTO expenses(amount,
                                     category,
