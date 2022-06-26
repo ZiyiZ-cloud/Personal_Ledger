@@ -56,12 +56,14 @@ function TotalExpenses(){
     return (
         <div>
             <div>
-                
+{/*                 
                 {expenses.expenses.length
                     ?<div><ExpenseCardList expenses={expenses.expenses}/>
                         </div>
                     :<p className="lead">Sorry, no results were found!</p>
-                }
+                } */}
+                <div><ExpenseCardList expenses={expenses.expenses}/>
+                        </div>
                
             </div>
             
